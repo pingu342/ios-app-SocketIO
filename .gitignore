@@ -1,0 +1,7 @@
+xcuserdata
+*~
+*.swp
+Pods/*
+build/*
+node_modules
+.DS_Store
