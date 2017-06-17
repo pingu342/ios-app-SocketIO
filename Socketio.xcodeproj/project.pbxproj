@@ -14,23 +14,8 @@
 		D048B5431EF4EF0B001F873D /* Socketio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D048B5411EF4EF0B001F873D /* Socketio.xcdatamodeld */; };
 		D048B5451EF4EF0B001F873D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D048B5441EF4EF0B001F873D /* Assets.xcassets */; };
 		D048B5481EF4EF0B001F873D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D048B5461EF4EF0B001F873D /* LaunchScreen.storyboard */; };
-		D0E9F22A1EF50ADF00BDE021 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E9F2281EF50AD900BDE021 /* SocketIO.framework */; };
-		D0E9F22B1EF50ADF00BDE021 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0E9F2281EF50AD900BDE021 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E51182247BB4AB5EAB7F6B85 /* Pods_Socketio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5E71ACD984FA1AD562363E /* Pods_Socketio.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D0E9F22C1EF50AE000BDE021 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D0E9F22B1EF50ADF00BDE021 /* SocketIO.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2E08E6311BA185861C86E0AA /* Pods-Socketio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socketio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Socketio/Pods-Socketio.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +32,7 @@
 		D048B5471EF4EF0B001F873D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D048B5491EF4EF0B001F873D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0E9F2281EF50AD900BDE021 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = "../../Library/Developer/Xcode/DerivedData/Socketio-axxdnjzfsknpqudlbsqpebfkschw/Build/Products/Debug-iphonesimulator/Socket.IO-Client-Swift/SocketIO.framework"; sourceTree = "<group>"; };
+		D0E9F22D1EF5259400BDE021 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5E71ACD984FA1AD562363E /* Pods_Socketio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Socketio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0E9F22A1EF50ADF00BDE021 /* SocketIO.framework in Frameworks */,
+				E51182247BB4AB5EAB7F6B85 /* Pods_Socketio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +60,7 @@
 		D048B5291EF4EF0B001F873D = {
 			isa = PBXGroup;
 			children = (
+				D0E9F22D1EF5259400BDE021 /* SocketIO.framework */,
 				D048B5341EF4EF0B001F873D /* Socketio */,
 				D048B5331EF4EF0B001F873D /* Products */,
 				EA783478F7DEAACA809E54F8 /* Pods */,
@@ -136,7 +123,6 @@
 				D048B5301EF4EF0B001F873D /* Resources */,
 				C9A5C7BCF624EBAC2DD6035E /* [CP] Embed Pods Frameworks */,
 				59BF90152982C37025FF63BB /* [CP] Copy Pods Resources */,
-				D0E9F22C1EF50AE000BDE021 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,7 +355,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E08E6311BA185861C86E0AA /* Pods-Socketio.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Socketio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,7 +368,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5076EBDD9338912371C80F8A /* Pods-Socketio.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Socketio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
